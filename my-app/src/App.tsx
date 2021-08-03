@@ -12,7 +12,7 @@ function App() {
 
   const saveLink = async () => {
     await api
-      .post(`/link/`, { link: `'${link}'` })
+      .post(`/link/`, { link })
       .then(res => setShortLink(res.data.shortLink))
   }
 
