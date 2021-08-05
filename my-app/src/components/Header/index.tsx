@@ -11,13 +11,13 @@ interface Props {
 
 const Header: React.FC<Props> = ({ toggleTheme }) => {
   /**
-   * Obtém as informações do tema.
+   * Get theme.
    */
   const { colors, title } = useContext(ThemeContext)
 
   return (
     <Container>
-      Short Link
+      Curt Link
       <Switch
         onChange={toggleTheme}
         checked={title === 'dark'}
